@@ -3,18 +3,17 @@
 <head>
         <meta charset="UTF-8">
         <title>ApiWars</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap-grid.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap-reboot.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap-reboot.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap-grid.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
 
 
-  <script src="{{ url_for('static',filename='js/bootstrap.js') }}" defer></script>
-  <script src="{{ url_for('static',filename='js/bootstrap.bundle.js') }}" defer></script>
-  <script src="{{ url_for('static',filename='js/main.js') }}" defer></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.bundle.js') }}" defer></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.js') }}" defer></script>
+    <script src="{{ url_for('static',filename='js/main.js') }}" defer></script>
 
-    </head>
+</head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -46,10 +45,10 @@
 <div style="margin-left: 2%; margin-right: 2%">
     <h1>Star Wars Universe planets</h1>
     <a>
-        <button type="button" class="btn ">Cica</button>
+        <button id="backButton" type="button" class="btn">Back</button>
     </a>
     <a>
-        <button type="button" class="btn btn-dark">Cica</button>
+        <button id="nextButton" type="button" class="btn btn-dark">Next</button>
     </a>
     <br><br>
     <table class ="table center table-bordered">
@@ -69,6 +68,30 @@
         </tbody>
     </table>
 </div>
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 </body>
 </html>
