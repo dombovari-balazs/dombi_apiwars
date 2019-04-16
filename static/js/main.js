@@ -4,7 +4,6 @@
 fetch('https://swapi.co/api/planets/?page='+'4')  // set the path; the method is GET by default, but can be modified with a second parameter
 .then((response) => response.json())  // parse JSON format into JS object
 .then((data) => {
-    clearTables();
     const tableData = document.querySelector("tbody");
     //TODO: Make it a shiny table
     data.results.forEach((row) => {
