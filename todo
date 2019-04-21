@@ -2,6 +2,9 @@ create a table on the main page     done
 login system
     usage of session
 
+
 layout system
-    BUTTON      should change a variable. So! The fetch gets a parameter, and we can change wich page we want to see
+    BUTTON      should change a variable. So! The fetch gets a parameter, and we can change which page we want to see
+    adding modal
+
 
